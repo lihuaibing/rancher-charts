@@ -43,6 +43,21 @@ entries:
     urls:
     - http://10.170.130.184:8879/elasticsearch-1.0.0.tgz
     version: 1.0.0
+  - appVersion: 5.6.16
+    created: 2019-06-20T21:46:19.259388943+08:00
+    description: Official Elastic helm chart for Elasticsearch
+    digest: sha256:eef407b32745378a89876b42928610efe5bed2b35c68ced4bebb4939ccbdc3d8
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/elasticsearch.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: elasticsearch
+    sources:
+    - https://github.com/elastic/elasticsearch
+    urls:
+    - http://127.0.0.1:8879/charts/elasticsearch-1.0.0.tgz
+    version: 1.0.0
   hadoop:
   - apiVersion: v1
     appVersion: 2.9.0
