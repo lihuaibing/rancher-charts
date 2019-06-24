@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   elasticsearch:
   - appVersion: 6.6.2
-    created: 2019-06-20T20:25:11.728408187+08:00
+    created: 2019-06-24T09:49:55.417647432+08:00
     description: Flexible and powerful open source, distributed real-time search and
       analytics engine.
     digest: b7a7d0f84fd0dc30612866d252d24a7ed8185a26eea09e0f17b346c94493f3f1
@@ -29,9 +29,9 @@ entries:
     - http://10.170.130.184:8879/elasticsearch-1.21.3.tgz
     version: 1.21.3
   - appVersion: 5.6.16
-    created: 2019-06-20T20:25:11.727269207+08:00
+    created: 2019-06-24T09:49:55.416543633+08:00
     description: Official Elastic helm chart for Elasticsearch
-    digest: c9641897ddfd9129f803ffb317ae437d23ae2da5788c480740c14e35d5dcaf5d
+    digest: fdeb41b834bc049dc08e883c32928ef3b1537d1fb02172fc95a690cbdaf918af
     home: https://github.com/elastic/helm-charts
     icon: https://helm.elastic.co/icons/elasticsearch.png
     maintainers:
@@ -43,25 +43,10 @@ entries:
     urls:
     - http://10.170.130.184:8879/elasticsearch-1.0.0.tgz
     version: 1.0.0
-  - appVersion: 5.6.16
-    created: 2019-06-20T21:46:19.259388943+08:00
-    description: Official Elastic helm chart for Elasticsearch
-    digest: sha256:eef407b32745378a89876b42928610efe5bed2b35c68ced4bebb4939ccbdc3d8
-    home: https://github.com/elastic/helm-charts
-    icon: https://helm.elastic.co/icons/elasticsearch.png
-    maintainers:
-    - email: helm-charts@elastic.co
-      name: Elastic
-    name: elasticsearch
-    sources:
-    - https://github.com/elastic/elasticsearch
-    urls:
-    - http://127.0.0.1:8879/charts/elasticsearch-1.0.0.tgz
-    version: 1.0.0
   hadoop:
   - apiVersion: v1
     appVersion: 2.9.0
-    created: 2019-06-20T20:25:11.72907108+08:00
+    created: 2019-06-24T09:49:55.418306983+08:00
     description: The Apache Hadoop software library is a framework that allows for
       the distributed processing of large data sets across clusters of computers using
       simple programming models.
@@ -79,7 +64,7 @@ entries:
     version: 1.1.0
   jenkins:
   - appVersion: lts
-    created: 2019-06-20T20:25:11.730432451+08:00
+    created: 2019-06-24T09:49:55.41966581+08:00
     description: Open source continuous integration server. It supports multiple SCM
       tools including CVS, Subversion and Git. It can execute Apache Ant and Apache
       Maven-based projects as well as arbitrary scripts.
@@ -105,7 +90,7 @@ entries:
   kube-state-metrics:
   - apiVersion: v1
     appVersion: 1.5.0
-    created: 2019-06-20T20:25:11.730894343+08:00
+    created: 2019-06-24T09:49:55.420138255+08:00
     description: Install kube-state-metrics to generate and expose cluster-level metrics
     digest: bbf8f30cf4757cf3fad5720370bfc73d4c0600b26b2a2ef8a00cae57b17e71ef
     home: https://github.com/kubernetes/kube-state-metrics/
@@ -125,7 +110,7 @@ entries:
   prometheus-node-exporter:
   - apiVersion: v1
     appVersion: 0.17.0
-    created: 2019-06-20T20:25:11.731450496+08:00
+    created: 2019-06-24T09:49:55.420685071+08:00
     description: A Helm chart for prometheus node-exporter
     digest: 837f29dd97aa0bf82146d7655308d7174561d809cf469b472219aa364e0fdee1
     home: https://github.com/prometheus/node_exporter/
@@ -145,7 +130,7 @@ entries:
   prometheus-operator:
   - apiVersion: v1
     appVersion: 0.29.0
-    created: 2019-06-20T20:25:11.748811232+08:00
+    created: 2019-06-24T09:49:55.43778756+08:00
     description: Provides easy monitoring definitions for Kubernetes services, and
       deployment and management of Prometheus instances.
     digest: f458b16868d8962b2b759c3d04128c0582eb277afdf635b877eb7835c33f9718
@@ -167,7 +152,7 @@ entries:
     version: 5.0.1
   - apiVersion: v1
     appVersion: 0.29.0
-    created: 2019-06-20T20:25:11.740217895+08:00
+    created: 2019-06-24T09:49:55.429322376+08:00
     description: Provides easy monitoring definitions for Kubernetes services, and
       deployment and management of Prometheus instances.
     digest: afd0961a5a1a180f4a105a332a2cbf40a34ab275841b45f0d5cc613a30e2c76b
@@ -187,9 +172,35 @@ entries:
     urls:
     - http://10.170.130.184:8879/prometheus-operator-5.0.0.tgz
     version: 5.0.0
+  redis:
+  - apiVersion: v1
+    appVersion: 5.0.5
+    created: 2019-06-24T09:49:55.439246843+08:00
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: adb6283babfe07b6c20cd4644758c3e2b5ed0acf640177d79e8dcf42a94f01b2
+    engine: gotpl
+    home: http://redis.io/
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    urls:
+    - http://10.170.130.184:8879/redis-8.0.10.tgz
+    version: 8.0.10
   sparkoperator:
   - appVersion: v1beta1-0.8.1-2.4.0
-    created: 2019-06-20T20:25:11.749246066+08:00
+    created: 2019-06-24T09:49:55.439668598+08:00
     description: A Helm chart for Spark on Kubernetes operator
     digest: d655af164fa0e9b4a04c53133be451e42317698c2a65acb08528263113657c7c
     home: https://github.com/GoogleCloudPlatform/spark-on-k8s-operator
@@ -203,4 +214,4 @@ entries:
     urls:
     - http://10.170.130.184:8879/sparkoperator-0.1.13.tgz
     version: 0.1.13
-generated: 2019-06-20T20:25:11.725877932+08:00
+generated: 2019-06-24T09:49:55.415119322+08:00
