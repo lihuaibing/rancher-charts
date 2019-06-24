@@ -223,6 +223,30 @@ entries:
     urls:
     - http://10.170.130.184:8879/redis-8.0.10.tgz
     version: 8.0.10
+  - appVersion: 4.0.13
+    created: 2019-06-24T10:41:30.510894094+08:00
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: sha256:7cd87aa3f36d1a58d7592e73dc7e551dc2618bea64e06cf3decb1a1aa702d725
+    engine: gotpl
+    home: http://redis.io/
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    urls:
+    - http://127.0.0.1:8879/charts/redis-6.0.0.tgz
+    version: 6.0.0
   sparkoperator:
   - appVersion: v1beta1-0.8.1-2.4.0
     created: 2019-06-24T10:22:10.348145928+08:00
